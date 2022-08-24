@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大家的BMI計算機!!!</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+
+<body>
+    <div class="caculator">
+        <form action>
+            <h1>BMI Caculator</h1>
+            <div class="input">
+                <label for="Height">Enter your Height (cm):</label>
+                <input type="number" id="Height" name="Height" placeholder="Unit: centimeter" required>
+            </div>
+            <div class="input">
+                <label for="Weight">Enter your Weight (kg):</label>
+                <input type="number" id="Weight" name="Height" placeholder="Unit: kilogram" max="300" required>
+            </div>
+            <button type="button" class="button" onclick="calc()">Caculate!</button>
+
+            <div class="result">
+                <label for="result">你的BMI:</label>
+                <input type="text" id="result" name="result">
+            </div>
+            <div class="result2">
+                <label for="result2">你的體態:</label>
+                <input type="text" id="result2" name="result2">
+            </div>
+            <button type="reset" class="reset">Reset!</button>
+
+    </div>
+    </form>
+    <div class="rules">
+        <ul>
+            <h2>BMI計算公式</h2>
+            <li>BMI = <sup>體重&#160;(公斤) &#160;</sup> &frasl;&#160; <sub>身高&#160;^&#160;2&#160;(公尺&#160;^&#160;2)</sub>
+            </li>
+        </ul>
+        <ul>
+            <h2> BMI規則</h2>
+            <li>體重過輕: 18.5 &#160; &lt;&#160; BMI </li>
+            <li>體重適中: 18.5 &#160; &le; &#160;BMI&#160; &lt; &#160;24.0</li>
+            <li>體重過重: 24.0 &#160; &le; &#160;BMI</li>
+        </ul>
+    </div>
+
+    <script tpye="text/javascript" src="BMI.js"></script>
+</body>
+
+</html>

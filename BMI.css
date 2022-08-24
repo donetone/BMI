@@ -1,0 +1,95 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #134565;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caculator {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    /* text-align: center; */
+    margin-right: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caculator div {
+    margin: 20px 0;
+}
+
+#Height {
+    width: 162px
+}
+
+.rules {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 1px solid black;
+}
+
+ul {
+    margin-bottom: 8px;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+
+    border: 2px solid rgb(135, 158, 214);
+    border-radius: 5px;
+    width: 100px;
+    background-color: #134565;
+    color: rgb(135, 158, 214);
+    padding: 10px;
+
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px rgb(135, 158, 214);
+    transform: translateY(-4px)
+}
+
+@media (max-width:1125px) {
+    body {
+        background-color: #134565;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1;
+    }
+
+    body div {
+        margin-bottom: 10px;
+    }
+
+    .caculator {
+        margin-right: 0;
+    }
+}
